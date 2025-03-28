@@ -66,7 +66,6 @@ const MangaReader = () => {
 
   return (
     <div>
-      <h1>One Piece - Глава 1</h1>
       {error ? (
         <p style={{ color: "red" }}>Ошибка: {error}</p>
       ) : pages.length === 0 ? (

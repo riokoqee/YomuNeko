@@ -1,10 +1,15 @@
-import { useState } from 'react'
-import MangaReader from './components/MangaReader';
+import { HashRouter, Route, Routes} from "react-router-dom";
+import RegisterPage from "./pages/RegisterPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
     <>
-      <MangaReader />
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<RegisterPage />}></Route>
+        </Routes>
+      </HashRouter>
     </>
   )
 }
