@@ -26,7 +26,7 @@ function Register() {
                         !
                     </h2>
                     <p className="register__description">
-                        Открывайте мир манги, маньхуа и манхвы с YomuNeko — управляйте своей библиотекой, отслеживайте прогресс чтения и наслаждайтесь любимыми историями! 📖😺
+                        Открывайте мир манги, маньхуа и манхвы с YomuNeko — управляйте своей библиотекой, <br /> отслеживайте прогресс чтения и наслаждайтесь любимыми историями! 📖😺
                     </p>
                     <ul className="register__list">
                         <li className="register__list__item">
@@ -45,11 +45,9 @@ function Register() {
                             <input type="text" placeholder="Подтвердите пароль" className="register__list__item__title" />
                             <img src={LockIcon} alt="lock icon" className="register__list__item__icon" />
                         </li>
-                        <li className="register__list__item register__list__button">
-                            <button className="register__button">
-                                Зарегистрироваться
-                            </button>
-                        </li>
+                        <button className="register__button">
+                            Зарегистрироваться
+                        </button>
                     </ul>
                     <article className="register__already">
                         <p className="register__already__text">

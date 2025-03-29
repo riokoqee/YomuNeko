@@ -1,9 +1,21 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
 .register {
     display: flex;
     height: 100vh;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     background-color: #f5f5f5;
+}
+
+.register__main {
+    width: 70%; 
+    height: 100%; 
 }
 
 .register__main {
@@ -18,7 +30,17 @@
 }
 
 .register__poster {
-    width: 50%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    height: 100vh;
+}
+
+.register__poster img {
+    width: 90%; /* Немного уменьшаем картинку */
+    height: auto;
+    object-fit: contain; /* Картинка полностью помещается в блок */
 }
 
 .register__title {
@@ -50,7 +72,84 @@
 }
 
 .register__description {
-    font-family: "LatoSemiBold";
+    font-family: "LatoBold";
     font-size: 12px;
-    color: #1F1F1F;
+    color: #777474;
+}
+
+.register__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register__list__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid rgba(31, 31, 31, 0.5);
+    border-radius: 10px;
+    padding: 5px 15px;
+    height: 48px;
+    width: 384px; 
+}
+
+.register__list__item input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.register__list__item__icon {
+    margin-left: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.register__button {
+    padding: 12px 24px; 
+    background-color: #1B6FA8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register__button:hover {
+    background-color: #3b6692; 
+}
+
+.register__list__item__title{
+    font-family: "LatoRegular";
+    font-size: 12px;
+}
+
+.register__already {
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+}
+
+.register__already__text {
+    font-family: "LatoMedium";
+    font-size: 14px;
+}
+
+.register__login {
+    font-family: "LatoBold";
+    font-size: 14px;
+    text-decoration: none; 
+    color: #1B6FA8;
 }
