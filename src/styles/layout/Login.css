@@ -1,8 +1,4 @@
-.html, body {
-    overflow: hidden;
-}
-
-.register {
+.login {
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -11,13 +7,13 @@
     background-color: #f5f5f5;
 }
 
-.register__main,
-.poster {
+.login__main,
+.login__poster {
     width: 50%; 
     height: 100%; 
 }
 
-.register__main {
+.login__main {
     width: 50%;
     padding: 40px;
     background-color: #fff;
@@ -28,21 +24,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.register__poster {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; 
-    height: 100vh;
-}
-
-.register__poster img {
-    width: 100%; /* Немного уменьшаем картинку */
-    height: auto;
-    object-fit: contain; /* Картинка полностью помещается в блок */
-}
-
-.register__title {
+.login__title {
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -51,38 +33,28 @@
     font-size: 405;
 }
 
-.register__yomuneko {
+.login__yomuneko {
     font-family: "LatoRegular";
     font-size: 40px;
     color: #1B6FA8;
 }
 
-.register__hieroglyph {
+.login__hieroglyph {
     font-size: 35px;
 }
 
-.register__welcome {
+.login__welcome {
     font-family: "LatoSemiBold";
     font-size: 32px;
 }
 
-.back__word {
-    color: #1B6FA8;
-}
-
-.register__description {
-    font-family: "LatoBold";
-    font-size: 12px;
-    color: #777474;
-}
-
-.register__list {
+.login__list {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.register__list__item {
+.login__list__item {
     display: flex;
     align-items: center;
     position: relative;
@@ -93,7 +65,7 @@
     width: 384px; 
 }
 
-.register__list__item input {
+.login__list__item input {
     border: none;
     outline: none;
     background: transparent;
@@ -103,7 +75,7 @@
     font-size: 16px;
 }
 
-.register__list__item__icon {
+.login__list__item__icon {
     margin-left: auto; 
     display: flex;
     align-items: center;
@@ -111,7 +83,7 @@
     border-radius: 50%;
 }
 
-.register__button {
+.login__button {
     padding: 12px 24px; 
     background-color: #1B6FA8;
     color: white;
@@ -126,29 +98,22 @@
     justify-content: center;
 }
 
-.register__button:hover {
+.login__button:hover {
     background-color: #3b6692; 
 }
 
-.register__list__item__title{
+.login__list__item__title{
     font-family: "LatoRegular";
     font-size: 12px;
 }
 
-.register__already {
+.login__already {
     display: flex;
     align-items: center; 
     gap: 5px; 
 }
 
-.register__already__text {
+.login__already__text {
     font-family: "LatoMedium";
     font-size: 14px;
-}
-
-.register__login {
-    font-family: "LatoBold";
-    font-size: 14px;
-    text-decoration: none; 
-    color: #1B6FA8;
 }

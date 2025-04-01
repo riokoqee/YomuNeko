@@ -5,9 +5,11 @@ import "../src/styles/base/typography.css"
 import "../src/styles/layout/Register.css"
 import "../src/styles/components/li.css"
 import "../src/styles/components/a.css"
+import "../src/styles/layout/Poster.css"
+import "../src/styles/layout/Login.css"
+import "../src/styles/layout/Home.css"
+import "../src/styles/layout/Header.css"
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
     <App />
-  </StrictMode>,
 )

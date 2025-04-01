@@ -56,7 +56,7 @@ function Register() {
                         <Link to="/login" className="register__login">Войти</Link>
                     </article>
                 </div>
-                <div className="register__poster">
+                <div className="poster">
                     <img src={Poster} alt="poster icon" className="LoginRegister__poster" />
                 </div>
             </section>

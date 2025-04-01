@@ -4,14 +4,13 @@ import axios from "axios";
 const MangaReader = () => {
   const [pages, setPages] = useState([]);
   const [error, setError] = useState(null);
-  const mangaTitle = "Tokyo Ghoul"; // Название манги
+  const mangaTitle = "Black Clover"; 
 
   useEffect(() => {
     const fetchMangaPages = async () => {
       try {
         setError(null);
 
-        // 1. Получаем ID манги
         console.log(`🔍 Поиск манги: ${mangaTitle}`);
         const mangaRes = await axios.get("https://api.mangadex.org/manga", {
           params: { title: mangaTitle, limit: 1 },
@@ -21,7 +20,6 @@ const MangaReader = () => {
         const mangaId = mangaRes.data.data[0]?.id;
         if (!mangaId) throw new Error("Манга не найдена");
 
-        // 2. Получаем список глав
         console.log(`📖 Поиск глав для манги ${mangaId}`);
         const chapterRes = await axios.get(
             `https://api.mangadex.org/chapter?manga=${mangaId}&translatedLanguage[]=ru&limit=10`
@@ -32,13 +30,11 @@ const MangaReader = () => {
           throw new Error("Главы не найдены");
         }
 
-        // 3. Проверяем главы, которые вернул API
         const validChapter = chapterRes.data.data.find((ch) => ch.attributes.pages > 0);
         if (!validChapter) throw new Error("Подходящая глава не найдена");
 
         const chapterId = validChapter.id;
 
-        // 4. Получаем ссылки на страницы главы
         console.log(`📥 Загрузка страниц для главы ${chapterId}`);
         const pagesRes = await axios.get(
           `https://api.mangadex.org/at-home/server/${chapterId}`
