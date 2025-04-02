@@ -34,8 +34,8 @@ body {
 .header__right {
     display: flex;
     align-items: center;
-    margin-left: auto; /* Прижимаем к правому краю */
-    gap: 20px; /* Добавляем отступ между элементами */
+    margin-left: auto; 
+    gap: 20px; 
     margin-right: 50px;
 }
 
@@ -48,7 +48,7 @@ body {
 
 .header__search-input {
     width: 250px;
-    padding: 10px 35px 10px 40px; /* Оставляем место для иконки */
+    padding: 10px 35px 10px 40px; 
     border-radius: 20px;
     border: 1px solid #ccc;
     outline: none;
