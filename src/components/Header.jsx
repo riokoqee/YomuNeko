@@ -15,22 +15,24 @@ function Header() {
                     読む猫
                 </h1>
             </div>
-            <div className="header__search">
-                <input 
-                    type="text"
-                    placeholder="Search here"
-                    className="header__search-input"
-                />
-            </div>
-            <div className="header__profile">
-                {user ? (
-                    <Link to="/profile" className="header__user">
-                        <img src={user.avatar} alt="User" className="header__avatar" />
-                        <span className="header__username">{user.name}</span>
-                    </Link>
-                ) : (
-                    <Link to="/login" className="header__login">Войти</Link>
-                )}
+            <div className="header__right">
+                <div className="header__search">
+                    <input 
+                        type="text"
+                        placeholder="Search here"
+                        className="header__search-input"
+                    />
+                </div>
+                <div className="header__profile">
+                    {user ? (
+                        <Link to="/profile" className="header__user">
+                            <img src={user.avatar} alt="User" className="header__avatar" />
+                            <span className="header__username">{user.name}</span>
+                        </Link>
+                    ) : (
+                        <Link to="/login" className="header__login">Войти</Link>
+                    )}
+                </div>
             </div>
         </header>
     )

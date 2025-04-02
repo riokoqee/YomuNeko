@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100vw;
+    border-bottom: 2px solid #000;
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: row;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__logo {
+    margin-left: 50px;
+
+    font-family: "LatoRegular";
+    font-size: 40px;
+    color: #1B6FA8;
+}
+
+.header__hieroglyph {
+    font-family: "LatoExtraBold";
+    font-size: 40px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Прижимаем к правому краю */
+    gap: 20px; /* Добавляем отступ между элементами */
+    margin-right: 50px;
+}
+
+.header__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header__search-input {
+    width: 250px;
+    padding: 10px 35px 10px 40px; /* Оставляем место для иконки */
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    background: #fff url("../../assets/images/search.png") no-repeat 10px center;
+    background-size: 20px 20px;
+    border: solid 1px;
+    box-shadow: 0px 4px 15px rgba(255, 200, 0, 0.7);
+    font-family: "LatoRegular";
+    font-size: 16px;
+}
+
+.header__login {
+    font-family: "LatoSemiBold";
+    font-size: 16px;
+    padding: 12px 24px; 
+    background-color: #1B6FA8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
