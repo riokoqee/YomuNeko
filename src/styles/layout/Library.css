@@ -1,0 +1,129 @@
+/* Основной контейнер для страницы "Моя библиотека" */
+.library {
+    margin-left: 300px; /* Сдвигаем содержимое вправо от сайдбара */
+    margin-top: 80px;   /* Делаем отступ от хедера */
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Стиль для блока загрузки комиксов */
+.upload-comic {
+    margin-top: 20px;  /* Отступ сверху от заголовка */
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;  /* Центрируем форму */
+}
+
+/* Заголовок формы */
+.upload-comic h2 {
+    color: #1b6fa8;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Стиль для полей ввода */
+.upload-comic input[type="text"],
+.upload-comic textarea,
+.upload-comic select,
+.upload-comic input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #1b6fa8;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Цвет поля при фокусе */
+.upload-comic input[type="text"]:focus,
+.upload-comic textarea:focus,
+.upload-comic select:focus,
+.upload-comic input[type="file"]:focus {
+    border-color: #f4b333;
+    outline: none;
+}
+
+/* Текстовое поле для описания */
+.upload-comic textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Подписи к полям */
+.upload-comic label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+    text-align: left;
+}
+
+/* Тип комикса (выпадающий список) */
+.upload-comic select {
+    padding: 12px;
+    border: 2px solid #1b6fa8;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Кнопка */
+.upload-comic button {
+    padding: 12px 20px;
+    background-color: #f4b333;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Кнопка при наведении */
+.upload-comic button:hover {
+    background-color: #e99a00; /* Цвет кнопки при наведении */
+}
+
+/* Ошибки */
+.upload-comic .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Успешное сообщение */
+.upload-comic .success {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Стиль для файла (комикс и постер) */
+.upload-comic .file-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.upload-comic .file-field input[type="file"] {
+    padding: 10px 0;
+}
+
+.upload-comic .file-label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+    text-align: left;
+}

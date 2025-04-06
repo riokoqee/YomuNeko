@@ -1,0 +1,49 @@
+/* Контейнер для всей страницы, включает Sidebar и основную область */
+.page-container {
+    display: flex;
+    height: 100vh;
+    background-color: #1f1f1f;
+    overflow: hidden;
+  }
+  
+  /* Основная область, где находятся Header и контент с комиксом */
+  .main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  /* Хедер с фиксированной высотой */
+  .comic-reader-header {
+    height: 60px;
+    background-color: transparent;
+    flex-shrink: 0;
+  }
+  
+  /* Основной контент под хедером с дополнительным отступом сверху */
+  .comic-reader-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 60px; /* Отступ равный высоте хедера */
+    overflow: auto;
+    margin-left: 150px;
+  }
+  
+  /* Контейнер с комиксом */
+  .comic-reader-pdf {
+    background-color: #121212;
+    border-radius: 10px;
+    max-width: 700px;
+    max-height: calc(100% - 20px); /* Учитываем отступы */
+    width: 100%;
+    overflow: auto;
+  }
+  
+  /* Убираем дополнительные стили у PDF-страниц */
+  .comic-reader-pdf .react-pdf__Page {
+    box-shadow: none;
+  }

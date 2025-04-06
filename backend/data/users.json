@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1743855061479,
+    "name": "rioko",
+    "email": "rioko@gmail.com",
+    "password": "$2b$10$gpjfOHxh86IAJGUdBg3SKePL7tQJc3AmmDbLFjydA8vnPYdCkDroO"
+  },
+  {
+    "id": 1743856879415,
+    "name": "a",
+    "email": "a@gmail.com",
+    "password": "$2b$10$6i5rBiHk0RXi38vCn6UlX.RU47ISRlt1I9.AuAiP4yhcgm4o4n5xm"
+  },
+  {
+    "id": 1743877067242,
+    "name": "test",
+    "email": "test@gmail.com",
+    "password": "$2b$10$Y0U2a1fw8ruwa8GIpGmOy.VMMD7iThbbANuruGkPV5IVQdNZIrGgK"
+  }
+]

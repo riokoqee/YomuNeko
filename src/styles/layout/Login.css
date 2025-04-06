@@ -1,0 +1,119 @@
+.login {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+.login__main,
+.login__poster {
+    width: 50%; 
+    height: 100%; 
+}
+
+.login__main {
+    width: 50%;
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login__title {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: "LatoRegular";
+    font-size: 405;
+}
+
+.login__yomuneko {
+    font-family: "LatoRegular";
+    font-size: 40px;
+    color: #1B6FA8;
+}
+
+.login__hieroglyph {
+    font-size: 35px;
+}
+
+.login__welcome {
+    font-family: "LatoSemiBold";
+    font-size: 32px;
+}
+
+.login__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login__list__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid rgba(31, 31, 31, 0.5);
+    border-radius: 10px;
+    padding: 5px 15px;
+    height: 48px;
+    width: 384px; 
+}
+
+.login__list__item input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.login__list__item__icon {
+    margin-left: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.login__button {
+    padding: 12px 24px; 
+    background-color: #1B6FA8;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__button:hover {
+    background-color: #3b6692; 
+}
+
+.login__list__item__title{
+    font-family: "LatoRegular";
+    font-size: 12px;
+}
+
+.login__already {
+    display: flex;
+    align-items: center; 
+    gap: 5px; 
+}
+
+.login__already__text {
+    font-family: "LatoMedium";
+    font-size: 14px;
+}

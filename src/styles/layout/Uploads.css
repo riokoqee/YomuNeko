@@ -1,0 +1,155 @@
+/* Контейнер для всех элементов загрузок */
+.uploads-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 250px; /* Отступ для сайдбара */
+    margin-top: 120px; /* Отступ сверху, чтобы не перекрывать хедер */
+    padding: 20px;
+    box-sizing: border-box;
+    height: calc(100vh - 120px); /* Чтобы высота контейнера не выходила за пределы экрана */
+    overflow-y: auto; /* Прокрутка по оси Y, если карточек будет много */
+  }
+  
+  /* Заголовок раздела "Мои загрузки" */
+  .uploads-header {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 24px;
+    color: #1e3e62; /* Основной цвет */
+    margin-bottom: 20px; /* Отступ снизу, чтобы не было прилипание к карточкам */
+    margin-left: 50px; /* Отступ от левого края, чтобы не заходило в сайдбар */
+  }
+  
+  /* Контейнер для карточек */
+  .uploads-container {
+    display: flex;
+    flex-wrap: wrap; /* Карточки будут располагаться по строкам */
+    gap: 20px;
+    width: calc(100% - 250px); /* Ширина контейнера, исключая ширину сайдбара */
+    box-sizing: border-box;
+  }
+  
+  /* Стиль карточки для комикса */
+  .upload-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    max-width: 320px; /* Максимальная ширина карточки */
+    width: 100%; /* Чтобы карточки растягивались, но не выходили за пределы */
+    flex: 1 1 320px; /* Чтобы карточки адаптировались к ширине */
+  }
+  
+  /* Карточка увеличивается при наведении */
+  .upload-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Изображение постера */
+  .upload-card img {
+    width: 100%;
+    height: 300px; /* Высота постера */
+    object-fit: cover; /* Заполнение изображения, сохраняя пропорции */
+    border-radius: 12px;
+  }
+  
+  /* Информация о комиксе */
+  .upload-card-info {
+    padding: 10px;
+  }
+  
+  /* Название комикса */
+  .upload-card-info h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 18px;
+    color: #1e3e62;
+    margin-bottom: 10px;
+  }
+  
+  /* Метки для каждого поля */
+  .upload-card-info .label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 14px;
+    color: #1e3e62;
+    margin-bottom: 5px;
+  }
+  
+  /* Тип комикса */
+  .upload-card-info .type {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 14px;
+    color: #7c7c7c;
+    margin-bottom: 5px;
+  }
+  
+  /* Описание комикса */
+  .upload-card-info .description {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 14px;
+    color: #7c7c7c;
+    margin-bottom: 10px;
+  }
+  
+  /* Кнопка "Читать" */
+  .upload-card-info a {
+    background-color: #1B6FA8; /* Синий по умолчанию */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500; /* Medium */
+  }
+  
+  .upload-card-info a:hover,
+  .upload-card-info a:focus {
+    background-color: #F4B333; /* Желтый при наведении */
+  }
+  
+  .upload-card-info a:active {
+    background-color: #e3a621; /* Желтый при нажатии */
+  }
+  
+  /* Если постер отсутствует */
+  .no-poster {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    color: #7c7c7c;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+  }
+  
+  /* Уровень расстояния между карточками */
+  .uploads-container .upload-card {
+    margin-bottom: 20px;
+  }
+  
+  /* Прокрутка контейнера, если карточек слишком много */
+  .uploads-container::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .uploads-container::-webkit-scrollbar-thumb {
+    background-color: #f4b333;
+    border-radius: 4px;
+  }
+  
+  .uploads-container::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
