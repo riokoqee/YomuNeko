@@ -171,7 +171,7 @@ npm start
 После запуска сервер будет доступен по адресу:
 
 ```text
-http://localhost:3001
+http://localhost:
 ```
 
 ### 7. Запуск frontend
