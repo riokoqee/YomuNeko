@@ -148,8 +148,8 @@ CREATE TABLE comics (
 В папке `backend` нужно создать файл `.env`:
 
 ```env
-PORT=3001
-JWT_SECRET=your_secret_key
+PORT=
+JWT_SECRET=
 ```
 
 Также проверьте подключение к базе данных в файле:
